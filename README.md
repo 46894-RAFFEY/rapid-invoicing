@@ -425,3 +425,4 @@ Feel free to reach out or check our [FAQ](./docs/FAQ.md) and [troubleshooting gu
 **Made with ❤️ for Pakistani Businesses**
 
 *Rapid Invoicing System © 2025. All rights reserved.*
+# rapid-invoicing
