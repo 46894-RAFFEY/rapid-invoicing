@@ -4,15 +4,17 @@
 
 A production-ready, web-based invoicing platform designed specifically for Pakistan's Federal Board of Revenue (FBR) compliance requirements. Rapid Invoicing enables businesses to create, validate, and submit invoices with official FBR numbers, PDFs, and QR codes in seconds.
 
+> Note: This is an individual student project. Security controls are implemented according to best practices and have not been formally audited by external professionals.
+
 ![Dashboard - Real-time Analytics & Revenue Tracking](./images/02-analytics-dashboard.png)
 
-> **Trusted by 50+ Pakistani Businesses | 12,173 Invoices Processed | 99.4% Success Rate | Enterprise-Grade Security**
+> **Trusted by Pakistani businesses | 12,173 invoices processed | 99.4% success rate | Built with strong security practices**
 
 ---
 
 ## �️ SECURITY FIRST
 
-Rapid Invoicing implements **enterprise-grade security** standards suitable for handling sensitive financial data:
+Rapid Invoicing implements **strong security practices** suitable for handling sensitive financial data:
 
 ### Authentication & Access Control
 - **🔐 JWT Token Authentication** - Secure, stateless token-based sessions with automatic expiration
@@ -37,8 +39,8 @@ Rapid Invoicing implements **enterprise-grade security** standards suitable for 
 
 ### Compliance & Audit
 - **📊 Complete Audit Logging** - Every action logged with user, timestamp, IP, and changes
-- **🔍 FBR Compliance** - Full compliance with Federal Board of Revenue security requirements
-- **📋 PCI DSS Ready** - Payment Card Industry compliance framework implementation
+- **🔍 FBR Compliance** - Built to support Federal Board of Revenue submission workflows
+- **📋 PCI DSS Design** - Implemented around PCI DSS-aligned controls; not formally certified
 - **🇵🇰 Data Residency** - All data stored within Pakistan data centers (no cross-border transfers)
 - **⏰ Retention Policies** - Configurable data retention with secure deletion
 
@@ -222,7 +224,7 @@ Rapid Invoicing implements **enterprise-grade security** standards suitable for 
 
 > **See [SECURITY.md](./docs/SECURITY.md) for comprehensive security documentation**
 
-Rapid Invoicing implements **enterprise-grade security** for handling sensitive financial data:
+Rapid Invoicing implements **strong security practices** for handling sensitive financial data:
 
 ### Core Security Features
 - ✅ **JWT Token Authentication** with automatic expiration
@@ -234,14 +236,14 @@ Rapid Invoicing implements **enterprise-grade security** for handling sensitive 
 - ✅ **CSRF Protection** with double-submit cookies
 - ✅ **Rate Limiting** adaptive throttling
 - ✅ **DDoS Protection** via CloudFlare/AWS Shield
-- ✅ **FBR Compliance** certified and validated
+- ✅ **FBR submission workflows** implemented, with FBR validation and audit logging
 
 ### Security Certifications
-- PCI DSS Ready
-- ISO 27001 Aligned
-- SOC 2 Compliant
+- PCI DSS-style controls implemented
+- ISO 27001-aligned controls documented
+- SOC 2-style controls implemented
 - OWASP Top 10 Coverage
-- Regular Penetration Testing
+- Penetration testing readiness
 
 ### Compliance Standards
 - Pakistan Federal Board of Revenue (FBR)
@@ -342,7 +344,7 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for comprehensive deployment in
 | Overall Invoice Accuracy | 99.4% |
 | System Uptime | 99.9%+ |
 | API Response Time | <500ms |
-| Concurrent Users | 10,000+ |
+| Concurrent Users | Multi-user workspace support |
 
 ### Security Metrics
 | Metric | Status |
@@ -351,9 +353,9 @@ See [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) for comprehensive deployment in
 | Encryption | AES-256 at Rest, TLS 1.3 in Transit |
 | Authentication | JWT with Auto-Expiration |
 | Audit Coverage | 100% of operations logged |
-| Code Security Testing | Daily automated scans |
-| Penetration Testing | Quarterly third-party tests |
-| Compliance | FBR certified, PCI DSS ready, ISO 27001 aligned |
+| Code Security Testing | Security review practices documented |
+| Penetration Testing | Designed for external penetration testing |
+| Compliance | FBR workflows supported, PCI/ISO/SOC best practices documented |
 | Data Breaches | 0 (since launch 2024) |
 
 ---
@@ -398,21 +400,19 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ---
 
-## 📊 Use Case: Real Customer Story
+## 📊 Use Case
 
-> *"Rapid Invoicing saved us one workspace for finance and operations—no more emailing spreadsheets to get FBR numbers. We went from 2 days of manual processing to 42 seconds per invoice."*
-> 
-> — **Retail Customer, Karachi**
+Built for Pakistani SMEs and early adopters who need faster, compliant invoice workflows.
 
 ---
 
 ## 🏆 Achievements
 
-- ✅ FBR Certified & Compliant
-- ✅ Processing 12,000+ Invoices Monthly
-- ✅ 99.4% First-Attempt Success Rate
-- ✅ 24-hour Support (Email & WhatsApp)
-- ✅ ISO Security Standards
+- ✅ Designed for FBR invoice submission workflows
+- ✅ 12,000+ invoices processed
+- ✅ 99.4% first-attempt success rate
+- ✅ Email support and documentation
+- ✅ ISO-aligned security practices
 
 ---
 

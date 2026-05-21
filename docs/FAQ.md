@@ -43,9 +43,9 @@ We use industry-standard security:
 - JWT token authentication
 - SSL/TLS encryption
 - Rate limiting and DDoS protection
-- Regular security audits
+- Security review practices
 - Complete audit logging
-- ISO compliance
+- ISO-aligned practices
 
 ### Can I import invoices from Excel?
 
