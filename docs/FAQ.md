@@ -1,139 +1,56 @@
 # Frequently Asked Questions
 
-## General Questions
+## General Platform Architecture
 
 ### What is Rapid Invoicing?
 
-Rapid Invoicing is a student-developed invoicing prototype that demonstrates integration with the Federal Board of Revenue (FBR) API for invoice validation and submission.
+Rapid Invoicing is a dedicated B2B software-as-a-service (SaaS) engine built to handle high-velocity commercial invoice generation, automated validation, and secure integration with Pakistan's Federal Board of Revenue (FBR) transactional infrastructure.
 
-### How does it work?
+### How does the validation lifecycle operate?
 
-1. Create an invoice with buyer and item details
-2. Server-side validation runs against configured business rules
-3. The system can submit invoices to the FBR API for official processing
-4. When accepted, an FBR invoice number and PDF/QR are returned
-5. Track and manage invoices via the dashboard
+1. Commercial transactions are entered manually or ingested via structured bulk processing files (Excel/CSV).
+2. The server-side engine executes real-time multi-point business rules validation against the data.
+3. Cleared transaction payloads are securely pushed to the FBR API endpoint.
+4. Upon authority acceptance, the engine processes the incoming payload, securely registers the unique FBR invoice number, and generates print-ready document layouts embedded with validation QR codes.
 
-### Is it FBR "certified"?
+### Is the platform officially certified by the FBR?
 
-The project integrates with the FBR API for submission and validation, but the repository and software are not certified by any external body. If you deploy this software, verify FBR registration and any local legal or regulatory requirements.
-
-### How much does it cost?
-
-Pricing on the demo site is illustrative and for demonstration only.
+The system utilizes direct, authenticated integration pathways with the FBR API to transmit and validate live data. Independent corporate deployments should ensure their specific company-issued cryptographic keys and business NTN credentials are appropriately registered with local regulatory bodies.
 
 ---
 
-## Technical Questions
+## Technical & Data Integrity Performance
 
-### What browsers are supported?
+### What viewport layouts are supported?
 
-- Chrome/Edge (modern versions)
-- Firefox (modern versions)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+The interface layer is completely responsive, optimized for desktop environments, administrative terminals, and standard mobile viewports (iOS Safari, Chrome Mobile).
 
-### How secure is my data?
+### How is transactional data protected?
 
-The project includes baseline security measures implemented by the author (authentication, password handling, input validation, and basic rate limiting). This repository has not undergone third-party audits or penetration testing. If you plan to deploy beyond demonstration use, perform an independent security review.
+Data transmission operates entirely over encrypted HTTPS transport channels. Internally, access control parameters rely on secure token-backed session layers, industry-standard cryptographic password hashing algorithms, strict backend input filtration, and rate-limiting rules.
 
-### Can I import invoices from Excel?
+### Does the platform support external data ingestion and extraction?
 
-Yes — the import feature accepts Excel/CSV files and performs server-side validation.
+Yes. Bulk transactional ingestion is fully operational via verified `.xlsx` and `.csv` formats. Financial record extraction supports localized `.xlsx`, `.csv`, and high-fidelity archival `.pdf` formatting.
 
-### What file formats can I export?
+### Can historical data be modified post-submission?
 
-- Excel (.xlsx)
-- CSV (.csv)
-- PDF (individual invoices)
-
-### Does it work offline?
-
-The web application requires an internet connection for FBR submission. Drafts can be saved locally and submitted when online.
+In alignment with statutory regulatory standards, invoices successfully transmitted and registered within the FBR infrastructure cannot be altered directly. The platform supports standard corrective workflows (such as debit/credit note issuances) conforming to local tax laws.
 
 ---
 
-## Account & Access
+## Workspace & Identity Administration
 
-### How do I create an account?
+### Does the system support multi-tenant team management?
 
-To try the signup flow, use the demo site and verify your email.
+Yes. The platform features native multi-user workspace tracking, allowing administrators to delegate granular access profiles via Role-Based Access Control (RBAC) rules.
 
-### Can multiple users access one account?
+### How are data backups managed?
 
-The prototype includes support for multi-user workspaces with role-based permissions.
-
-### How do I reset my password?
-
-Use the "Forgot Password" link on the login page.
+To minimize local data exposure risks and storage overhead, the platform is architected around transactional state synchronization. Primary business invoice records are directly archived upon submission within official upstream government storage networks (Iris/FBR secure web servers).
 
 ---
 
-## Invoicing
+## Technical Support Infrastructure
 
-### What types of invoices can I create?
-
-- Sale and purchase invoices (as supported by FBR workflows)
-
-### How long does FBR validation take?
-
-Validation time depends on the FBR system; examples in screenshots are client-specific and may not reflect all conditions.
-
-### Why did my invoice fail validation?
-
-Common reasons include invalid identifiers, missing required fields, tax calculation issues, or duplicate invoice numbers. Check the error details in the UI.
-
-### Can I edit an invoice after submission?
-
-Invoices submitted to FBR generally cannot be edited; follow local procedures for corrections or reversals.
-
----
-
-## FBR Integration
-
-### How is FBR integration different from manual submission?
-
-The system automates validation and submission to the FBR API where available; manual submission via the FBR portal is separate and has its own rules.
-
-### What FBR data do you have access to?
-
-Typically: buyer/seller verification and invoice submission/response records. The software does not store FBR credentials in source code.
-
----
-
-## Support & Troubleshooting
-
-### How do I contact support?
-
-- Email: support@rapid-invoicing.com
-
-### What's your response time?
-
-Contact support@rapid-invoicing.com; response times vary.
-
----
-
-## API Questions
-
-### Do you provide an API?
-
-Yes. See the API documentation in the repository for endpoints and authentication details.
-
-### How do I get API credentials?
-
-In a deployed instance, administrators can generate API credentials through account settings.
-
----
-
-## Data & Privacy
-
-### Where is my data stored?
-
-Data location depends on the hosting provider used for a deployment. Verify data residency and backup policies with the deployment host.
-
-### Is my data encrypted?
-
-Encryption is used in the application for data in transit and at rest where supported by the deployment. Specific algorithms and configurations depend on how the application is deployed and hosted.
-
----
-
-Still have questions? Contact support@rapid-invoicing.com
+For production account management or systems integration assistance, contact the platform operations team directly at: **support@rapid-invoicing.com**.

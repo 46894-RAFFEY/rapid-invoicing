@@ -1,85 +1,52 @@
-# .gitignore for Rapid Invoicing System
-
-# Frontend
+# Core Platform System Exclusions
 node_modules/
 dist/
 build/
 .next
 out/
 .expo/
-.env.local
-.env.*.local
 
-# Frontend build artifacts
+# Cache Architecture & Build Artifact Layers
 *.js.map
 *.css.map
 .parcel-cache/
 .cache/
+.phpunit.result.cache
 
-# IDEs
+# IDE and Developer Workspace Parameters
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 .DS_Store
+Thumbs.db
 
-# Logs
+# Storage Logs and System Runtime Records
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 
-# Backend
+# Framework Specific Exclusions
 backend/vendor/
-backend/composer.lock
 backend/.env
 backend/.env.local
 backend/.env.*.php
 
-# Database
+# Local Relational Database Backup Isolation
 backend/database/*.sql
 
-# PHP
-*.phtml
-.phpunit.result.cache
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*.tmp
-*.bak
-*.swp
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-
-# Package managers
-yarn.lock
-package-lock.json
-
-# Environment variables
+# Security & Environmental Target Protections
 .env
 .env.example
+.env.local
 .env.*.local
 
-# Testing
+# Automated Testing Coverage Exports
 coverage/
 .nyc_output/
 
-# Build output
-dist/
-build/
-out/
-
-# Deployment
+# Cloud Ecosystem Target Routings
 .vercel/
 .netlify/

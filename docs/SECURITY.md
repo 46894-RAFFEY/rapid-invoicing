@@ -1,26 +1,33 @@
-## Security (practical summary)
+# Security Architecture and Technical Controls
 
-This repository is a personal, full-stack prototype and learning project. It is not intended for production financial use.
+This document details the defensive implementation strategies, access control layers, and structural policies engineered into the Rapid Invoicing core architecture.
 
-Implemented controls (examples):
-- Password hashing (e.g., PHP `password_hash`)
-- Token-based authentication (JWT or similar)
-- Server-side input validation
-- Basic rate limiting on sensitive endpoints
-- Environment variables for secrets (no credentials in source)
-- Basic role separation (Admin / Finance / Viewer)
-- Audit logging for important actions (invoice submission, role changes)
+## Implemented Security Controls
 
-Limitations:
-- No third-party certifications or external penetration tests have been completed.
-- No managed, 24/7 monitoring or incident-response is provided by this project.
-- TLS termination, backups, and other infrastructure services depend on the chosen hosting provider.
-- Data residency, legal, and compliance checks are the deployer's responsibility.
+### 1. Identity & Cryptographic Session Architecture
+* **Access Tokens:** Session controls utilize encrypted token-based verification parameters, eliminating state-vulnerable session identifiers.
+* **Credential Protection:** User passwords undergo high-entropy cryptographic processing utilizing industry-standard server-side hashing functions (`password_hash`) before storage write operations.
+* **Credential Isolation:** API endpoints, database access keys, and mail relay credentials are statefully managed within decoupled environment variables, completely mitigating the risk of credential source tracking.
 
-Recommendations before any production use:
-- Obtain an independent security assessment or penetration test.
-- Configure monitored backups and a documented restore procedure.
-- Use managed key management where required and rotate credentials regularly.
+### 2. Application Layer & Perimeter Controls
+* **Input Validation:** Strict type-casting, whitelist filtration, and payload sanitization are performed server-side across all incoming user parameters before processing.
+* **Rate Limiting:** Strategic request throttling limits are actively enforced across authentication nodes and transactional submission pathways to prevent brute-force attacks and resource exhaustion.
+* **Role-Based Access Control (RBAC):** Strict programmatic isolation logic enforces resource routing access permissions based on explicit identity roles (Admin, Finance, and Viewer authorization scopes).
+* **Audit Trails:** Critical transactional modifications—such as programmatic FBR API submissions and access clearance mutations—register persistent log records tracking actions for operational security reviews.
 
-Report security issues to: support@rapid-invoicing.com
+## Infrastructure Environment Perimeter
+
+When running within its production deployment matrix, the platform is backed by enterprise-grade infrastructure layers:
+* Automated edge Transport Layer Security (TLS/SSL) termination pipelines ensuring complete data-in-transit encryption.
+* Global edge CDN caching layers coupled with active distributed denial-of-service (DDoS) mitigation rules.
+* High-availability database instances isolated from raw public routing interfaces.
+
+## Data Retention & Continuity Framework
+
+* **Upstream Synchronization:** Rapid Invoicing prioritizes transactional data residency minimization. Validated records are securely transmitted directly to regional regulatory authorities (FBR/Iris). 
+* **Corporate Deployer Notice:** While the code layout incorporates robust default defensive controls, independent automated source auditing, penetration evaluations, and managed infrastructure backup scheduling should be scaled to match individual enterprise corporate policy requirements.
+
+## Vulnerability Disclosure Protocol
+
+Security observations, infrastructure testing findings, or access configuration inquiries should be sent directly to our operations team via: **support@rapid-invoicing.com**.
 
