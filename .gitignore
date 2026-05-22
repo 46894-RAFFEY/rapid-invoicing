@@ -40,8 +40,6 @@ backend/.env.*.php
 
 # Database
 backend/database/*.sql
-!backend/database/schema.sql
-!backend/database/backup.sql
 
 # PHP
 *.phtml

@@ -1,237 +1,121 @@
 # Rapid Invoicing System
 
-> **FBR-Compliant SaaS Invoicing Platform for Pakistani Businesses**
+Rapid Invoicing is a student-developed invoicing system that integrates with Pakistan's Federal Board of Revenue (FBR) API for invoice validation and submission. The project is presented as a practical prototype and portfolio repository. The author runs the system for a small number of clients (7) but the project has not been externally audited or certified.
 
-A production-ready, web-based invoicing platform built specifically for Pakistan's Federal Board of Revenue (FBR) compliance requirements. Rapid Invoicing enables businesses to create, validate, and submit invoices with official FBR numbers, PDFs, and QR codes in seconds.
+Note: this repository represents a student project used in limited production. If you plan to deploy it for broader use, perform formal security reviews, backups, monitoring, and legal/compliance checks before relying on it.
 
-[![Dashboard](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/02-analytics-dashboard.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/02-analytics-dashboard.png)
-
-> **Used by 7 Pakistani Businesses | 12,173+ Invoices Processed | 99.4% Accuracy Rate**
+![Dashboard - Example Analytics](./images/02-analytics-dashboard.png)
 
 ---
 
-## 🚀 What It Does
+## What this repository contains
 
-Rapid Invoicing is a live SaaS product handling real FBR invoice submission for Pakistani businesses. It removes the manual process of generating FBR-compliant invoices — a task that previously required hours of spreadsheet work — and reduces it to under a minute per invoice.
-
-**Live:** [rapid-invoicing.com](https://rapid-invoicing.com)
-
----
-
-## 🔐 Security Implementation
-
-Rapid Invoicing handles sensitive financial data and implements the following security controls:
-
-### Authentication & Access Control
-- **JWT Token Authentication** — stateless sessions with automatic expiration
-- **Multi-Factor Authentication (MFA)** — optional 2FA support
-- **Role-Based Access Control (RBAC)** — Admin, Finance Manager, and Viewer roles
-- **Session Management** — automatic timeout and secure token refresh
-
-### Data Protection
-- **TLS 1.3** — all data encrypted in transit
-- **AES-256 Encryption at Rest** — sensitive fields encrypted in database
-- **bcrypt Password Hashing** — passwords never stored in plaintext
-- **Token Encryption** — all auth tokens algorithm-encrypted
-
-### API Security
-- **Rate Limiting** — IP-based and user-based adaptive throttling
-- **Input Validation** — strict server-side validation and sanitisation
-- **CORS Policy** — whitelist-based, no wildcard `*` allowed
-- **CSRF Protection** — double-submit cookie tokens
-
-### Compliance
-- **FBR-Compliant** — meets Federal Board of Revenue integration requirements
-- **Complete Audit Logging** — every action logged with user, timestamp, and IP
-- **Data Residency** — all data stored within Pakistan
+- Source for a web frontend and a backend API that demonstrate invoice creation, validation, and submission to the FBR API.
+- Example screenshots and sample data for demonstration; the screenshots show client-specific or example datasets, not global usage metrics.
+- Basic operational tooling and documentation to run the prototype in a small-scale environment.
 
 ---
 
-## ✅ Features
+## What it does
 
-### Core Invoicing
-- FBR-compliant invoices with official FBR numbers and QR codes
-- Multi-invoice type support (Sale, Purchase, and more)
-- Bulk Excel import with automatic validation
-- Real-time analytics dashboard
-
-### Invoice Management
-- Advanced search by invoice number, buyer, NTN/CNIC, FBR number
-- Chronological organisation by submission or invoice date
-- Bulk export to Excel/CSV
-- Status tracking for validation and FBR submission
-
-### Data Integrity
-- Real-time validation with instant feedback
-- Automatic tax calculation verification
-- Duplicate invoice detection
-- NTN/CNIC verification against FBR database
-- Business rule enforcement for FBR compliance
+- Integrates with the FBR API to submit invoices and receive FBR invoice numbers
+- Generates printable invoices (PDF) with QR codes
+- Bulk import of invoices from Excel/CSV for faster entry
+- Server-side validation and simple duplicate detection
+- Lightweight role-based access control (Admin / Finance / Viewer)
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### Landing Page
-[![Landing Page](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/01-landing-page.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/01-landing-page.png)
+- Landing page: ./images/01-landing-page.png
+- Analytics dashboard: ./images/02-analytics-dashboard.png
+- Invoice creation (steps): ./images/03-create-invoice-step1-details.png, ./images/04-create-invoice-step2-buyer.png, ./images/05-create-invoice-step3-items.png
+- Invoice management and history: ./images/07-invoice-management-list.png, ./images/08-submitted-invoices-history.png
+- Print / PDF examples: ./images/09-invoice-print-top.png, ./images/10-invoice-print-bottom.png
+- Pricing mockup: ./images/11-pricing-plans.png
 
-### Analytics Dashboard
-[![Analytics Dashboard](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/02-analytics-dashboard.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/02-analytics-dashboard.png)
-
-### Invoice Creation — Step 1: Details
-[![Step 1](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/03-create-invoice-step1-details.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/03-create-invoice-step1-details.png)
-
-### Invoice Creation — Step 2: Buyer
-[![Step 2](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/04-create-invoice-step2-buyer.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/04-create-invoice-step2-buyer.png)
-
-### Invoice Creation — Step 3: Items
-[![Step 3](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/05-create-invoice-step3-items.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/05-create-invoice-step3-items.png)
-
-### Validation & Submission
-[![Validation](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/06-invoice-validation-confirmed.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/06-invoice-validation-confirmed.png)
-
-### Invoice Management
-[![Management](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/07-invoice-management-list.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/07-invoice-management-list.png)
-
-### Submitted Invoices — Audit History
-[![History](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/08-submitted-invoices-history.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/08-submitted-invoices-history.png)
-
-### Invoice Print — FBR Format
-[![Print Top](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/09-invoice-print-top.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/09-invoice-print-top.png)
-[![Print Bottom](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/10-invoice-print-bottom.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/10-invoice-print-bottom.png)
-
-### Pricing
-[![Pricing](https://github.com/46894-RAFFEY/rapid-invoicing/raw/main/images/11-pricing-plans.png)](https://github.com/46894-RAFFEY/rapid-invoicing/blob/main/images/11-pricing-plans.png)
+Images are included as visual proof of the UI and flows; numbers shown in the screenshots are client- or demo-specific.
 
 ---
 
-## 🏗️ Architecture
+## Architecture (simplified)
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    Rapid Invoicing System                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌──────────────────┐        ┌──────────────────────────┐  │
-│  │  React Frontend  │        │    PHP Backend API       │  │
-│  │  (Vite + TSX)    │◄──────►│    (REST Endpoints)      │  │
-│  │  • Dashboard     │        │    • Auth Service        │  │
-│  │  • Invoice Forms │        │    • Invoice Service     │  │
-│  │  • Analytics     │        │    • FBR Integration     │  │
-│  │  • Reports       │        │    • Email Queue         │  │
-│  └──────────────────┘        └──────────────────────────┘  │
-│                                          │                  │
-│                                          ▼                  │
-│                              ┌──────────────────────┐      │
-│                              │    MySQL Database     │      │
-│                              │    • Users           │      │
-│                              │    • Invoices        │      │
-│                              │    • Buyers          │      │
-│                              │    • Audit Logs      │      │
-│                              └──────────────────────┘      │
-│                                          │                  │
-│                                          ▼                  │
-│                        ┌─────────────────────────────────┐ │
-│                        │       External Services         │ │
-│                        │  • FBR API (invoice submission) │ │
-│                        │  • Email Service (SMTP)         │ │
-│                        │  • Firebase (optional auth)     │ │
-│                        └─────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
+ 	React frontend  <---->  PHP backend API  <---->  MySQL database
+ 					|
+ 					+----> FBR API (invoice submission)
+ 					+----> Email service (SMTP)
+
 ```
 
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-- **React 18** with TypeScript
-- **Vite** build tool
-- **Tailwind CSS**
-- **Recharts** for analytics
-- **React Router** + **Axios**
-
-### Backend
-- **PHP 7.4+** REST API
-- **MySQL** relational database
-- **PHPMailer** for email
-- **Firebase JWT** for token auth
-
-### FBR Integration
-- Official FBR API for real-time submission and validation
-- QR code generation for FBR compliance
-- Compliant PDF invoice generation
+This diagram intentionally shows only the components implemented in the repository. The production hosting provider may offer additional managed services (CDN, edge protection, backups) — verify with your hosting provider when deploying.
 
 ---
 
-## 📊 Real Stats
+## Tech stack
 
-| Metric | Value |
-|---|---|
-| Invoices Processed | 12,173+ |
-| FBR Submission Success Rate | 96% |
-| First-Attempt Accuracy | 99.4% |
-| Avg. FBR API Response Time | 42 seconds |
-| Active Business Clients | 7 |
-| Total Revenue Tracked | PKR 36,037.67 |
+- Frontend: React + TypeScript, Vite, Tailwind CSS
+- Backend: PHP (REST API)
+- Database: MySQL
+- Other: Email (SMTP), QR/PDF generation libraries
 
 ---
 
-## 🔐 Security Features Summary
+## Usage notes
 
-| Feature | Implementation |
-|---|---|
-| Authentication | JWT with automatic expiration |
-| Password Storage | bcrypt with salt |
-| Data in Transit | TLS 1.3 HTTPS |
-| Data at Rest | AES-256 encryption |
-| Access Control | RBAC (Admin / Finance / Viewer) |
-| Injection Prevention | Prepared statements, input sanitisation |
-| XSS Prevention | Output encoding |
-| CSRF Protection | Double-submit cookie tokens |
-| Rate Limiting | IP + user-based adaptive throttling |
-| Audit Trail | 100% of operations logged |
+- This project is used by the maintainer with a small number of client workspaces (7). Counts shown in screenshots are example or client-specific and should not be treated as global metrics.
+- The live site `rapid-invoicing.com` is the author's deployment; the code in this repository is the source used for that deployment.
 
 ---
 
-## 📁 Documentation
+## Security (brief)
 
-| File | Contents |
-|---|---|
-| [SECURITY.md](docs/SECURITY.md) | Full security implementation details |
-| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design and component breakdown |
-| [FAQ.md](docs/FAQ.md) | Common questions on features and usage |
-| [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) | Known issues and fixes |
+The project includes baseline security measures implemented by the author for practical use. It has NOT undergone external certification or third-party penetration testing.
 
----
+Implemented (examples):
+- Token-based authentication and session handling
+- Password hashing and account controls
+- Server-side input validation and basic rate limiting
+- Secrets stored via environment variables (no hardcoded credentials)
+- Basic audit logging for important operations (e.g., invoice submission)
 
-## 🎯 Roadmap
+Limitations:
+- No formal certifications (PCI, ISO, SOC, GDPR compliance statements removed)
+- No external penetration testing completed
+- Backups, monitoring, and advanced protections depend on the hosting provider and FBR/IRIS retention; this repository does not provide an independent enterprise backup/monitoring service
 
-- [ ] Urdu language support
-- [ ] Mobile app (React Native)
-- [ ] Advanced analytics and custom reporting
-- [ ] Accounting software integration
-- [ ] Automatic invoice scheduling
-- [ ] Blockchain-based invoice verification
+If you need to run this at scale or for regulated production environments, perform independent security assessments and implement formal monitoring, backup, and incident response practices.
 
 ---
 
-## 🏆 Achievements
+## Documentation
 
-- ✅ FBR-Compliant — meets all Federal Board of Revenue integration requirements
-- ✅ 12,000+ invoices processed in production
-- ✅ 99.4% first-attempt accuracy rate
-- ✅ Live and actively used by Pakistani businesses
-
----
-
-## 📞 Contact
-
-- **Email:** support@rapid-invoicing.com
-- **Live Site:** [rapid-invoicing.com](https://rapid-invoicing.com)
+- [docs/SECURITY.md](docs/SECURITY.md) — honest summary of implemented controls and limitations
+- [docs/FAQ.md](docs/FAQ.md)
+- [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
 
 ---
 
-**Made for Pakistani Businesses**
+## Roadmap (aspirational)
 
-*Rapid Invoicing System © 2025. All rights reserved.*
+- Urdu language support
+- Mobile app (React Native)
+- Advanced analytics and reporting
+- Integration with accounting software
+
+These items are planned as future enhancements.
+
+---
+
+## Contact
+
+- Email: support@rapid-invoicing.com
+- Live site: https://rapid-invoicing.com
+
+---
+
+## License
+
+MIT — see the LICENSE file
+

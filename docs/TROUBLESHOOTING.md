@@ -268,24 +268,11 @@
 
 ## Contact Support
 
-If the above solutions don't work:
+If the above solutions don't work, contact the project maintainer by email:
 
-### Email Support
-- **support@rapid-invoicing.com**
-- Include: error message, screenshot, browser/OS info
+- **support@rapid-invoicing.com** — include the error message, a screenshot, and browser/OS information.
 
-### WhatsApp Support
-- **+92-XXX-XXXXXXX**
-- Available 9 AM - 5 PM (PKT)
-
-### In-App Chat
-- Click help icon in bottom right
-- Available 9 AM - 5 PM (PKT)
-
-### Report a Bug
-- Go to Settings > Help > Report Bug
-- Provide detailed description
-- Include screenshots/error messages
+If your deployed instance includes an in-app bug report feature or a status page, use those tools; otherwise email support.
 
 ---
 
@@ -327,9 +314,9 @@ A: Clear cache, try a different browser, or reset your password.
 
 ## Status Page
 
-Check real-time system status:
-- **Website Status:** [https://status.rapid-invoicing.com](https://status.rapid-invoicing.com)
-- **FBR Status:** [https://fbr.gov.pk](https://fbr.gov.pk)
+For FBR system status check: [https://fbr.gov.pk](https://fbr.gov.pk).
+
+If you are using a hosted deployment that provides a status page, check that host's status page for system availability.
 
 ---
 
