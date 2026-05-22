@@ -36,12 +36,27 @@ React Frontend  <---->  PHP Backend API  <---->  MySQL Database
 
 ## Interface Previews
 
-* **Platform Entry:** `./images/01-landing-page.png`
-* **Operational Dashboard:** `./images/02-analytics-dashboard.png`
-* **Guided Billing Flows:** `./images/03-create-invoice-step1-details.png`, `./images/04-create-invoice-step2-buyer.png`, `./images/05-create-invoice-step3-items.png`
-* **Data Verification:** `./images/06-invoice-validation-confirmed.png`
-* **Ledger & Audit History:** `./images/07-invoice-management-list.png`, `./images/08-submitted-invoices-history.png`
-* **Document Export Engine:** `./images/09-invoice-print-top.png`, `./images/10-invoice-print-bottom.png`
+### Platform Entry
+![Platform Entry](./images/01-landing-page.png)
+
+### Operational Dashboard
+![Operational Dashboard](./images/02-analytics-dashboard.png)
+
+### Guided Billing Flows
+![Create Invoice Step 1](./images/03-create-invoice-step1-details.png)
+![Create Invoice Step 2](./images/04-create-invoice-step2-buyer.png)
+![Create Invoice Step 3](./images/05-create-invoice-step3-items.png)
+
+### Data Verification
+![Invoice Validation Confirmed](./images/06-invoice-validation-confirmed.png)
+
+### Ledger & Audit History
+![Invoice Management List](./images/07-invoice-management-list.png)
+![Submitted Invoices History](./images/08-submitted-invoices-history.png)
+
+### Document Export Engine
+![Invoice Print Top](./images/09-invoice-print-top.png)
+![Invoice Print Bottom](./images/10-invoice-print-bottom.png)
 
 > **Note on Datasets:** Metrics, charts, and transaction figures visible within the provided interface previews represent specific client-managed operational accounts and localized demonstration profiles. They do not represent platform-wide aggregate volumes.
 
