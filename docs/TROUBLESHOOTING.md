@@ -237,7 +237,7 @@
 
 ---
 
-## Advanced Troubleshooting
+## Troubleshooting
 
 ### Check Browser Console for Errors
 

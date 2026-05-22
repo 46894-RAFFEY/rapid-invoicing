@@ -4,7 +4,7 @@
 
 ### What is Rapid Invoicing?
 
-Rapid Invoicing is a student-developed invoicing system used by the project author and a small set of clients. It integrates with the Federal Board of Revenue (FBR) for invoice validation and submission.
+Rapid Invoicing is a student-developed invoicing prototype that demonstrates integration with the Federal Board of Revenue (FBR) API for invoice validation and submission.
 
 ### How does it work?
 
@@ -16,11 +16,11 @@ Rapid Invoicing is a student-developed invoicing system used by the project auth
 
 ### Is it FBR "certified"?
 
-The project integrates with the FBR API for submission and validation, but the repository and software are not certified by any external compliance body. Organizations using the software should verify FBR registration and any local compliance requirements for their use case.
+The project integrates with the FBR API for submission and validation, but the repository and software are not certified by any external body. If you deploy this software, verify FBR registration and any local legal or regulatory requirements.
 
 ### How much does it cost?
 
-See the live site for current pricing.
+Pricing on the demo site is illustrative and for demonstration only.
 
 ---
 
@@ -34,7 +34,7 @@ See the live site for current pricing.
 
 ### How secure is my data?
 
-The project includes baseline security measures implemented by the author (authentication, password handling, input validation, and basic rate limiting). This repository has not undergone third-party audits or penetration testing. If you plan to use it beyond the current client set, perform an independent security review.
+The project includes baseline security measures implemented by the author (authentication, password handling, input validation, and basic rate limiting). This repository has not undergone third-party audits or penetration testing. If you plan to deploy beyond demonstration use, perform an independent security review.
 
 ### Can I import invoices from Excel?
 
@@ -56,11 +56,11 @@ The web application requires an internet connection for FBR submission. Drafts c
 
 ### How do I create an account?
 
-Follow the signup flow on the live site and verify your email.
+To try the signup flow, use the demo site and verify your email.
 
 ### Can multiple users access one account?
 
-Yes — the product supports multi-user workspaces with role-based permissions.
+The prototype includes support for multi-user workspaces with role-based permissions.
 
 ### How do I reset my password?
 
@@ -108,7 +108,7 @@ Typically: buyer/seller verification and invoice submission/response records. Th
 
 ### What's your response time?
 
-Support response times vary by plan and availability — contact the support email for current SLAs.
+Contact support@rapid-invoicing.com; response times vary.
 
 ---
 
@@ -120,7 +120,7 @@ Yes. See the API documentation in the repository for endpoints and authenticatio
 
 ### How do I get API credentials?
 
-Generate API credentials from the account settings in the deployed application.
+In a deployed instance, administrators can generate API credentials through account settings.
 
 ---
 

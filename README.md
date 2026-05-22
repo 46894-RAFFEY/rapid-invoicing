@@ -1,8 +1,6 @@
 # Rapid Invoicing System
 
-Rapid Invoicing is a student-developed invoicing system that integrates with Pakistan's Federal Board of Revenue (FBR) API for invoice validation and submission. The project is presented as a practical prototype and portfolio repository. The author runs the system for a small number of clients (7) but the project has not been externally audited or certified.
-
-Note: this repository represents a student project used in limited production. If you plan to deploy it for broader use, perform formal security reviews, backups, monitoring, and legal/compliance checks before relying on it.
+Rapid Invoicing is a student-developed, full-stack prototype demonstrating integration with Pakistan's Federal Board of Revenue (FBR) API for invoice validation and submission. It is a personal learning project and is not intended for production financial use.
 
 ![Dashboard - Example Analytics](./images/02-analytics-dashboard.png)
 
@@ -49,7 +47,7 @@ Images are included as visual proof of the UI and flows; numbers shown in the sc
 
 ```
 
-This diagram intentionally shows only the components implemented in the repository. The production hosting provider may offer additional managed services (CDN, edge protection, backups) — verify with your hosting provider when deploying.
+This diagram intentionally shows only the components implemented in the repository. Hosting providers may offer infrastructure services (TLS termination, backups); verify provider policies before deploying.
 
 ---
 
@@ -64,8 +62,8 @@ This diagram intentionally shows only the components implemented in the reposito
 
 ## Usage notes
 
-- This project is used by the maintainer with a small number of client workspaces (7). Counts shown in screenshots are example or client-specific and should not be treated as global metrics.
-- The live site `rapid-invoicing.com` is the author's deployment; the code in this repository is the source used for that deployment.
+- Designed to simulate features commonly found in invoicing systems. Screenshots show example or client-specific datasets and should not be treated as global metrics.
+- Demo site: https://rapid-invoicing.com (author's demo deployment)
 
 ---
 
@@ -80,12 +78,13 @@ Implemented (examples):
 - Secrets stored via environment variables (no hardcoded credentials)
 - Basic audit logging for important operations (e.g., invoice submission)
 
-Limitations:
-- No formal certifications (PCI, ISO, SOC, GDPR compliance statements removed)
-- No external penetration testing completed
-- Backups, monitoring, and advanced protections depend on the hosting provider and FBR/IRIS retention; this repository does not provide an independent enterprise backup/monitoring service
+## Limitations
 
-If you need to run this at scale or for regulated production environments, perform independent security assessments and implement formal monitoring, backup, and incident response practices.
+- Built as a portfolio and learning project; not intended for production financial use.
+- Does not include automated testing, cloud deployment scripts, or compliance workflows.
+- External security assessments, production monitoring, and managed backups are out of scope for this repository.
+
+If you plan to deploy this code in a regulated or production environment, obtain an independent security assessment and implement appropriate operational controls before relying on it.
 
 ---
 
@@ -101,7 +100,7 @@ If you need to run this at scale or for regulated production environments, perfo
 
 - Urdu language support
 - Mobile app (React Native)
-- Advanced analytics and reporting
+- Analytics and reporting
 - Integration with accounting software
 
 These items are planned as future enhancements.
