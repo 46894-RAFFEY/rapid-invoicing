@@ -43,9 +43,3 @@ If technical operational faults persist beyond the standard remediation workflow
 1. Capture clean screenshot evidence of the interface viewport displaying the issue.
 2. Access the internal developer terminal window (F12 -> Console Tab) and export relevant system runtime output traces.
 3. Package these details alongside an operational summary and transmit them directly to: **support@rapid-invoicing.com**.
-
-
----
-
-**Last Updated:** May 14, 2025  
-**For more help:** support@rapid-invoicing.com

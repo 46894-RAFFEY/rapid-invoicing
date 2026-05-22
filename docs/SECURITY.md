@@ -30,4 +30,3 @@ When running within its production deployment matrix, the platform is backed by 
 ## Vulnerability Disclosure Protocol
 
 Security observations, infrastructure testing findings, or access configuration inquiries should be sent directly to our operations team via: **support@rapid-invoicing.com**.
-
