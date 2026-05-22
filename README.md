@@ -1,8 +1,37 @@
-# Rapid Invoicing System
+# Rapid Invoicing - FBR Compliant Invoice Management System
+
+🚀 **Production-ready FBR-compliant invoicing SaaS for Pakistan**  
+Currently powering **7 companies** and **12,000+ invoices** processed.
+
+**Live Website**: [https://www.rapid-invoicing.com](https://www.rapid-invoicing.com)
 
 Rapid Invoicing is a production-grade, full-stack B2B SaaS platform engineered to streamline commercial invoice lifecycle management, automated validation, and direct integration with Pakistan's Federal Board of Revenue (FBR) API.
 
 ![Dashboard - Example Analytics](./images/02-analytics-dashboard.png)
+
+---
+
+## Features
+
+- Real-time FBR invoice submission & validation
+- JWT Authentication with secure sessions
+- Mobile-responsive modern dashboard
+- Email verification and notifications
+- Rate limiting & security middleware
+- Complete SEO optimization (50+ FBR related keywords)
+- Invoice template management
+- Business & client management
+- Tax & rate calculation support
+- Secure data handling
+
+---
+
+## Tech Stack
+
+**Frontend**: React 18 + TypeScript + Vite + Tailwind CSS  
+**Backend**: PHP 8 + REST API + MySQL/MariaDB  
+**Server**: Apache with .htaccess  
+**Architecture**: Clean separation of Frontend & Backend with JWT Auth
 
 ---
 
